@@ -1,5 +1,5 @@
 # ProjectOne
-Project still tbd
+Image editor with gui and argparse
 
 To install dependencies:
 ```pip install -r requirements.txt```
