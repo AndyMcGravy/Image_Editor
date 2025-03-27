@@ -2,7 +2,7 @@
 Project still tbd
 
 To install dependencies:
-```pip install -r .\requirements.txt```
+```pip install -r requirements.txt```
 
 To run:
 ```python src/main.py```
@@ -12,3 +12,5 @@ To run:
 - tkinter
 - Argparse
 - Pillows
+
+#install pillows correctly
