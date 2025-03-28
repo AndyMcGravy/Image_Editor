@@ -11,10 +11,11 @@ import argparse as ap
 #function to take in the arguments
 
 def get_args():
-    parser = ap.ArgumentParser(description="Resize images")
-    parser.add_argument("input image path", description="The image to edit")
-    parser.add_argument("output image path", description="The path to save the edited image to")
-    parser.add_argument("x", description="The x dimension to resize the image to")
-    parser.add_argument("y", description="The y dimension to resize the image to")
+    parser = ap.ArgumentParser(description="Resize_images")
+    parser.add_argument("input_image_path", help="The image to edit")
+    parser.add_argument("output_image_path", help="The path to save the edited image to")
+    parser.add_argument("x", type=int, help="The x dimension to resize the image to")
+    parser.add_argument("y", type=int, help="The y dimension to resize the image to")
     return parser.parse_args()
 
+print(get_args())
