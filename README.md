@@ -12,5 +12,3 @@ To run:
 - tkinter
 - Argparse
 - Pillows
-
-#install pillows correctly
