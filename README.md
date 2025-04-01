@@ -7,8 +7,10 @@ To install dependencies:
 To run:
 ```python src/main.py [image_path] [output_path] [resize_height] [resize_width]```
 
+Example: 
+``` python srs/main.py /home/mastergravy/Downloads/cat.jpeg /home/mastergravy/Pictures/catresized 500 500```
 
 # STUFF TO READ UP ON
-- tkinter
-- Argparse
-- Pillows
+- tkinter  ( )
+- Argparse (x)
+- Pillows  (x)
