@@ -1,4 +1,4 @@
-# ProjectOne
+# Image_Editor
 Image editor with gui and argparse
 
 To install dependencies:
