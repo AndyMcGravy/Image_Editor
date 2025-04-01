@@ -1,5 +1,5 @@
 import image_editor as imgedit
-import gui
+import gui.resize_screen as resize_screen
 import argparse
 #REMINDER TO SELF --> argparse is a module that will allow us to pass arguments to the script
 
@@ -28,14 +28,14 @@ else:
 
 def main():
     # Call the GUI function
-    gui.run_gui()
+    resize_screen.run_gui()
 
     # print("Image path:", gui.image_path.get()) #uncomment this line to test the image path input
     # print("Output path:", gui.output_path.get()) #output path input test
     # print("Width:", gui.width.get()) #width test
     # print("Height:", gui.height.get()) # height test
 
-    imgedit.resize(gui.image_path.get(), gui.output_path.get(), gui.width.get(), gui.height.get())
+    imgedit.resize(resize_screen.image_path.get(), resize_screen.output_path.get(), resize_screen.width.get(), resize_screen.height.get())
 
 
 main()
