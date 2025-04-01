@@ -14,14 +14,28 @@ import argparse
 
 # argparse to take in the image path and output path
 parser = argparse.ArgumentParser()
-parser.add_argument("image_path", help="path to the image to be resized")
-parser.add_argument("output_path", help="path to save the resized image")
-parser.add_argument("width", type=int, help="width of the resized image")
-parser.add_argument("height", type=int, help="height of the resized image")
 args = parser.parse_args()
 
-imgedit.resize(args.image_path, args.output_path, args.width, args.height)
+if parser.add_argument("-r", "-resize", action="store_true", help="Resize the image") == True:
+    parser.add_argument("image_path", help="path to the image to be resized")
+    parser.add_argument("output_path", help="path to save the resized image")
+    parser.add_argument("width", type=int, help="width of the resized image")
+    parser.add_argument("height", type=int, help="height of the resized image")
+    imgedit.resize(args.image_path, args.output_path, args.width, args.height) #uncomment this line to test the image resizing function via CLI
+
+else:
+    print("no arguments provided, running GUI now")
 
 def main():
-    # Call the GUI function to start the application
+    # Call the GUI function
     gui.run_gui()
+
+    # print("Image path:", gui.image_path.get()) #uncomment this line to test the image path input
+    # print("Output path:", gui.output_path.get()) #output path input test
+    # print("Width:", gui.width.get()) #width test
+    # print("Height:", gui.height.get()) # height test
+
+    imgedit.resize(gui.image_path.get(), gui.output_path.get(), gui.width.get(), gui.height.get())
+
+
+main()

@@ -15,7 +15,7 @@ def resize(image_path, output_path, width, height):
         img_format = img.format if img.format else 'PNG'  # Default to 'PNG' if format is None
         img.save(output_path, format=img_format)
         #print success message
-        print("Image resized and save to", output_path)
+        print("Image resized and saved to", output_path)
 
     except Exception as e:
         print("Error resizing image:", e)
