@@ -14,6 +14,9 @@ ttk.Label(frm, text="Enter Image Path:").grid(column=0, row=1)
 ttk.Entry(frm, textvariable = image_path).grid(column=1, row=1) 
 ttk.Button(frm, text="Quit", command=root.destroy).grid(column=2, row=10)
 
-root.mainloop()
+def run_gui(): 
+    root.mainloop()
 
 print(image_path.get())
+
+run_gui()

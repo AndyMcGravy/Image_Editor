@@ -1,6 +1,6 @@
 import image_editor as imgedit
+import gui
 import argparse
-import tkinter
 #REMINDER TO SELF --> argparse is a module that will allow us to pass arguments to the script
 
 
@@ -21,3 +21,7 @@ parser.add_argument("height", type=int, help="height of the resized image")
 args = parser.parse_args()
 
 imgedit.resize(args.image_path, args.output_path, args.width, args.height)
+
+def main():
+    # Call the GUI function to start the application
+    gui.run_gui()
