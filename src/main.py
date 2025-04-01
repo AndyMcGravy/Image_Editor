@@ -1,6 +1,6 @@
 import image_editor as imgedit
 import argparse
-
+import tkinter
 #REMINDER TO SELF --> argparse is a module that will allow us to pass arguments to the script
 
 
@@ -12,7 +12,7 @@ import argparse
 # args = parser.parse_args()
 # print(args.echo)
 
-#argparse to take in the image path and output path
+# argparse to take in the image path and output path
 parser = argparse.ArgumentParser()
 parser.add_argument("image_path", help="path to the image to be resized")
 parser.add_argument("output_path", help="path to save the resized image")
