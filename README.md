@@ -5,7 +5,7 @@ To install dependencies:
 ```pip install -r requirements.txt```
 
 To run:
-```python src/main.py```
+```python src/main.py [image_path] [output_path] [resize_height] [resize_width]```
 
 
 # STUFF TO READ UP ON
