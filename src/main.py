@@ -1,4 +1,4 @@
-import image_editor as imgedit
+import image_editor.image_resize as imgedit
 import gui.user_interfaces as user_interfaces
 import argparse
 #REMINDER TO SELF --> argparse is a module that will allow us to pass arguments to the script
